@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/decoderx2/decoderx2TB_isim_beh.exe" -prj "E:/decoderx2/decoderx2TB_beh.prj" "work.decoderx2TB" 

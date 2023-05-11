@@ -1,0 +1,4 @@
+vhdl work "FA.vhd"
+vhdl work "adder.vhd"
+vhdl work "simplemulty.vhd"
+vhdl work "simplemulty-tb.vhd"

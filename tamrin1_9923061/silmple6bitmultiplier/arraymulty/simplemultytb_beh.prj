@@ -1,0 +1,3 @@
+vhdl work "FA.vhd"
+vhdl work "arraymulty.vhd"
+vhdl work "multytb.vhd"

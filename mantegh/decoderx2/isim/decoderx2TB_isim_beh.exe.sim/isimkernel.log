@@ -1,0 +1,28 @@
+Command line:
+   decoderx2TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49285
+
+Mon Apr 24 15:00:27 2023
+
+
+ Elaboration Time: 0.062401 sec
+
+ Current Memory Usage: 697.02 Meg
+
+ Total Signals          : 8
+ Total Nets             : 17
+ Total Signal Drivers   : 4
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 3
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 500
+
+ Total Simulation Time: 0.078001 sec
+
+ Current Memory Usage: 697.02 Meg
+
+Mon Apr 24 15:04:05 2023
+

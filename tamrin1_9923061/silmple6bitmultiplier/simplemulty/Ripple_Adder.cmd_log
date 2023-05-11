@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/Ripple_Adder.xst" -ofn "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/Ripple_Adder.syr" 

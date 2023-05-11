@@ -1,0 +1,28 @@
+Command line:
+   carrymultytb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59240
+
+Mon Mar 13 02:00:48 2023
+
+
+ Elaboration Time: 0.296875 sec
+
+ Current Memory Usage: 5175.14 Meg
+
+ Total Signals          : 315
+ Total Nets             : 199
+ Total Signal Drivers   : 99
+ Total Blocks           : 53
+ Total Primitive Blocks : 44
+ Total Processes        : 97
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 682
+
+ Total Simulation Time: 0.375 sec
+
+ Current Memory Usage: 5017.85 Meg
+
+Mon Mar 13 02:27:02 2023
+

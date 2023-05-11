@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../decoderx2.vhd" \
+"../../../../../decoderx2TB.vhd" \
+
+# Do not sort compile order
+nosort

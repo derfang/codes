@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/decoderx2/decoderx2.xst" -ofn "E:/decoderx2/decoderx2.syr" 
+xst -intstyle ise -ifn "E:/decoderx2/decoderx2.xst" -ofn "E:/decoderx2/decoderx2.syr" 
+xst -intstyle ise -ifn "E:/decoderx2/decoderx2.xst" -ofn "E:/decoderx2/decoderx2.syr" 

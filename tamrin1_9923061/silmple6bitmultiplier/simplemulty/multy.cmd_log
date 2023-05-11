@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/multy.xst" -ofn "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/multy.syr" 
+xst -intstyle ise -ifn "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/multy.xst" -ofn "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/multy.syr" 
+xst -intstyle ise -ifn "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/multy.xst" -ofn "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/multy.syr" 
+xst -intstyle ise -ifn "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/multy.xst" -ofn "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/multy.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 multy.ngc multy.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o multy_map.ncd multy.ngd multy.pcf 
+par -w -intstyle ise -ol high -mt off multy_map.ncd multy.ncd multy.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml multy.twx multy.ncd -o multy.twr multy.pcf 

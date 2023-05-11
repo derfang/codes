@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/simplemultytb_isim_beh.exe" -prj "C:/Users/erfan/Desktop/temp/mantegh/2/simplemulty/simplemultytb_beh.prj" "work.simplemultytb" 

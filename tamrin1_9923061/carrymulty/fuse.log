@@ -1,0 +1,26 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/erfan/Desktop/hossi/carrymulty/carrymultytb_isim_beh.exe -prj C:/Users/erfan/Desktop/hossi/carrymulty/carrymultytb_beh.prj work.carrymultytb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/erfan/Desktop/hossi/carrymulty/FA.vhd" into library work
+Parsing VHDL file "C:/Users/erfan/Desktop/hossi/carrymulty/sixFA.vhd" into library work
+Parsing VHDL file "C:/Users/erfan/Desktop/hossi/carrymulty/Ripple_Adder.vhd" into library work
+Parsing VHDL file "C:/Users/erfan/Desktop/hossi/carrymulty/carrymulty.vhd" into library work
+Parsing VHDL file "C:/Users/erfan/Desktop/hossi/carrymulty/multytb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture gate_level of entity FA [fa_default]
+Compiling architecture behavioral of entity sixFA [sixfa_default]
+Compiling architecture behavioral of entity Ripple_Adder [ripple_adder_default]
+Compiling architecture rtl of entity carrymulty [carrymulty_default]
+Compiling architecture behavior of entity carrymultytb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Built simulation executable C:/Users/erfan/Desktop/hossi/carrymulty/carrymultytb_isim_beh.exe
+Fuse Memory Usage: 36768 KB
+Fuse CPU Usage: 937 ms

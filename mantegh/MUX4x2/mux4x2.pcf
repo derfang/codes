@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Apr 24 14:21:10 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "A<0>" LOCATE = SITE "P78" LEVEL 1;
+COMP "A<1>" LOCATE = SITE "P77" LEVEL 1;
+COMP "B<0>" LOCATE = SITE "P76" LEVEL 1;
+COMP "B<1>" LOCATE = SITE "P74" LEVEL 1;
+COMP "O<0>" LOCATE = SITE "P168" LEVEL 1;
+COMP "O<1>" LOCATE = SITE "P169" LEVEL 1;
+COMP "C<0>" LOCATE = SITE "P72" LEVEL 1;
+COMP "C<1>" LOCATE = SITE "P71" LEVEL 1;
+COMP "D<0>" LOCATE = SITE "P67" LEVEL 1;
+COMP "D<1>" LOCATE = SITE "P68" LEVEL 1;
+COMP "S<0>" LOCATE = SITE "P87" LEVEL 1;
+COMP "S<1>" LOCATE = SITE "P86" LEVEL 1;
+SCHEMATIC END;
+

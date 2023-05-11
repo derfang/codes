@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/MUX4x2/MUX4x2TB_isim_beh.exe -prj E:/MUX4x2/MUX4x2TB_beh.prj work.MUX4x2TB 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/MUX4x2/mux4x2.vhd" into library work
+Parsing VHDL file "E:/MUX4x2/MUX4x2TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 105536 KB
+Fuse CPU Usage: 140 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity mux4x2 [mux4x2_default]
+Compiling architecture behavior of entity mux4x2tb
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Built simulation executable E:/MUX4x2/MUX4x2TB_isim_beh.exe
+Fuse Memory Usage: 121072 KB
+Fuse CPU Usage: 202 ms

@@ -1,0 +1,4 @@
+work	"FA.vhd"
+work	"Ripple_Adder.vhd"
+work	"carrymulty.vhd"
+work	"sixFA.vhd"

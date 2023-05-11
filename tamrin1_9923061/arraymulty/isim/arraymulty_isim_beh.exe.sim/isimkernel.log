@@ -1,0 +1,28 @@
+Command line:
+   arraymulty_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49325
+
+Sun Mar 12 00:43:43 2023
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 5175.06 Meg
+
+ Total Signals          : 171
+ Total Nets             : 114
+ Total Signal Drivers   : 75
+ Total Blocks           : 32
+ Total Primitive Blocks : 31
+ Total Processes        : 75
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 474
+
+ Total Simulation Time: 0.265625 sec
+
+ Current Memory Usage: 5017.78 Meg
+
+Sun Mar 12 00:45:50 2023
+

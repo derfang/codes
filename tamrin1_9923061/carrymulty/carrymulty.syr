@@ -1,0 +1,334 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: carrymulty.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "carrymulty.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "carrymulty"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : carrymulty
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\erfan\Desktop\hossi\carrymulty\FA.vhd" into library work
+Parsing entity <FA>.
+Parsing architecture <gate_level> of entity <fa>.
+Parsing VHDL file "C:\Users\erfan\Desktop\hossi\carrymulty\sixFA.vhd" into library work
+Parsing entity <sixFA>.
+Parsing architecture <Behavioral> of entity <sixfa>.
+Parsing VHDL file "C:\Users\erfan\Desktop\hossi\carrymulty\Ripple_Adder.vhd" into library work
+Parsing entity <Ripple_Adder>.
+Parsing architecture <Behavioral> of entity <ripple_adder>.
+Parsing VHDL file "C:\Users\erfan\Desktop\hossi\carrymulty\carrymulty.vhd" into library work
+Parsing entity <carrymulty>.
+Parsing architecture <rtl> of entity <carrymulty>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <carrymulty> (architecture <rtl>) from library <work>.
+
+Elaborating entity <sixFA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FA> (architecture <gate_level>) from library <work>.
+
+Elaborating entity <Ripple_Adder> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <carrymulty>.
+    Related source file is "C:\Users\erfan\Desktop\hossi\carrymulty\carrymulty.vhd".
+INFO:Xst:3210 - "C:\Users\erfan\Desktop\hossi\carrymulty\carrymulty.vhd" line 138: Output port <Cout> of the instance <cell_6> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <carrymulty> synthesized.
+
+Synthesizing Unit <sixFA>.
+    Related source file is "C:\Users\erfan\Desktop\hossi\carrymulty\sixFA.vhd".
+    Summary:
+	no macro.
+Unit <sixFA> synthesized.
+
+Synthesizing Unit <FA>.
+    Related source file is "C:\Users\erfan\Desktop\hossi\carrymulty\FA.vhd".
+    Summary:
+Unit <FA> synthesized.
+
+Synthesizing Unit <Ripple_Adder>.
+    Related source file is "C:\Users\erfan\Desktop\hossi\carrymulty\Ripple_Adder.vhd".
+    Summary:
+	no macro.
+Unit <Ripple_Adder> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 84
+ 1-bit xor2                                            : 84
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 84
+ 1-bit xor2                                            : 84
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <carrymulty> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block carrymulty, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : carrymulty.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 47
+#      LUT2                        : 7
+#      LUT4                        : 8
+#      LUT5                        : 3
+#      LUT6                        : 29
+# IO Buffers                       : 24
+#      IBUF                        : 12
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   47  out of   2400     1%  
+    Number used as Logic:                47  out of   2400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     47
+   Number with an unused Flip Flop:      47  out of     47   100%  
+   Number with an unused LUT:             0  out of     47     0%  
+   Number of fully used LUT-FF pairs:     0  out of     47     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    102    23%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 13.976ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1690 / 12
+-------------------------------------------------------------------------
+Delay:               13.976ns (Levels of Logic = 10)
+  Source:            y<2> (PAD)
+  Destination:       p<10> (PAD)
+
+  Data Path: y<2> to p<10>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.222   1.277  y_2_IBUF (y_2_IBUF)
+     LUT6:I1->O            3   0.203   0.898  cell_2/FA4/Cout1 (C2<3>)
+     LUT4:I0->O            2   0.203   0.981  cell_3/FA4/Mxor_S_xo<0>1 (S3<3>)
+     LUT6:I0->O            2   0.203   0.981  cell_4/FA3/Mxor_S_xo<0>1 (S4<2>)
+     LUT6:I0->O            2   0.203   0.981  cell_5/FA2/Mxor_S_xo<0>1 (S5<1>)
+     LUT6:I0->O            3   0.203   0.898  cell_6/FA1/A_B_AND_37_o1 (cell_6/c1)
+     LUT6:I2->O            2   0.203   0.981  cell_6/FA3/Cout1 (cell_6/c3)
+     LUT6:I0->O            2   0.203   0.981  cell_6/FA4/Cout1 (cell_6/c4)
+     LUT6:I0->O            1   0.203   0.579  cell_6/FA5/Mxor_S_xo<0>1 (p_10_OBUF)
+     OBUF:I->O                 2.571          p_10_OBUF (p<10>)
+    ----------------------------------------
+    Total                     13.976ns (5.417ns logic, 8.559ns route)
+                                       (38.8% logic, 61.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.34 secs
+ 
+--> 
+
+Total memory usage is 4485968 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

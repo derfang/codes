@@ -1,0 +1,4 @@
+vhdl isim_temp "FA.vhd"
+vhdl isim_temp "adder.vhd"
+vhdl isim_temp "simplemulty.vhd"
+vhdl isim_temp "simplemulty-tb.vhd"

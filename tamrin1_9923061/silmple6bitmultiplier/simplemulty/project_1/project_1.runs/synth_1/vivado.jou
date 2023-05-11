@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr  1 00:44:52 2023
+# Process ID: 6696
+# Current directory: C:/Users/PADIDAR/Desktop/tamrin1_9923061/silmple6bitmultiplier/simplemulty/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log multy.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multy.tcl
+# Log file: C:/Users/PADIDAR/Desktop/tamrin1_9923061/silmple6bitmultiplier/simplemulty/project_1/project_1.runs/synth_1/multy.vds
+# Journal file: C:/Users/PADIDAR/Desktop/tamrin1_9923061/silmple6bitmultiplier/simplemulty/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source multy.tcl -notrace

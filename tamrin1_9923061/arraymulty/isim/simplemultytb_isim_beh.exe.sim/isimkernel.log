@@ -1,0 +1,28 @@
+Command line:
+   simplemultytb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59243
+
+Mon Mar 13 02:29:10 2023
+
+
+ Elaboration Time: 0.296875 sec
+
+ Current Memory Usage: 5175.12 Meg
+
+ Total Signals          : 175
+ Total Nets             : 126
+ Total Signal Drivers   : 78
+ Total Blocks           : 34
+ Total Primitive Blocks : 32
+ Total Processes        : 76
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 609
+
+ Total Simulation Time: 0.4375 sec
+
+ Current Memory Usage: 5489.7 Meg
+
+Mon Mar 13 02:29:54 2023
+

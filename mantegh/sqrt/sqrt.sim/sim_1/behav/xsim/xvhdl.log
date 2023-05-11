@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/PADIDAR/Desktop/temp/codes/mantegh/sqrt/sqrt.srcs/sources_1/new/YBlock.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'YBlock'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/PADIDAR/Desktop/temp/codes/mantegh/sqrt/sqrt.srcs/sim_1/new/YBlocktb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'YBlocktb'
