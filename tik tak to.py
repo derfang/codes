@@ -97,7 +97,7 @@ def Ai(board):
 
 #7. main function and the game loop
 def main_function():
-    """This is the main function"""
+    """This is the main for "the tik tak to" game function"""
     print("Welcome to tik tak to")
     board = make_board()
     print_board(board)

@@ -6,7 +6,6 @@
 from time import sleep
 
 
-#functions
 def pararelle_dynamic_resistors(list_of_resistors):
     """ This function calculates the total resistance of pararelle dynamic resistors
     Input: some dynamic number of resistors
@@ -14,7 +13,6 @@ def pararelle_dynamic_resistors(list_of_resistors):
     return 1 / sum(1 / float(i) for i in list_of_resistors)
 
 
-#implimantation
 print(
     "Welcome to pararelle resistor calculator, \n" +
     "This program calculates the total resistance of a dynamic number of pararelle resistors "
