@@ -1,1 +1,0 @@
--wto "3cb38ff47ce44000a268c754efce2fce" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Xblocktb_behav" "xil_defaultlib.Xblocktb" -log "elaborate.log" 

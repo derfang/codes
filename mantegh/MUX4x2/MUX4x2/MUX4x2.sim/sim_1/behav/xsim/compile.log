@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/PADIDAR/Desktop/temp/codes/mantegh/MUX4x2/mux4x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'mux4x2'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/PADIDAR/Desktop/temp/codes/mantegh/MUX4x2/MUX4x2TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'MUX4x2TB'

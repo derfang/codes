@@ -1,3 +1,0 @@
-vhdl isim_temp "FA.vhd"
-vhdl isim_temp "arraymulty.vhd"
-vhdl isim_temp "multytb.vhd"

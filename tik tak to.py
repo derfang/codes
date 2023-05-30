@@ -102,27 +102,37 @@ def main_function():
     board = make_board()
     print_board(board)
     while True:
-        print("Your turn")
-        print(
-            "The first number is the row and the second number is the column")
-        user_input(board)
-        print_board(board)
-        if referee(board) == "X":
-            print("X wins")
+        while True:
+            print("Your turn")
+            print(
+                "The first number is the row and the second number is the column"
+            )
+            user_input(board)
+            print_board(board)
+            if referee(board) == "X":
+                print("X wins")
+                break
+            elif referee(board) == "draw":
+                print("Draw")
+                break
+            Ai(board)
+            print_board(board)
+            if referee(board) == "O":
+                print("O wins")
+                break
+            elif referee(board) == "draw":
+                print("Draw")
+                break
+        play_again = input("do you want to play again? (y/n) : ")
+        if play_again == "n":
+            print("Thanks for playing!!!")
+            print("The game will close in 5 seconds")
+            time.sleep(5)
             break
-        elif referee(board) == "draw":
-            print("Draw")
-            break
-        Ai(board)
-        print_board(board)
-        if referee(board) == "O":
-            print("O wins")
-            break
-        elif referee(board) == "draw":
-            print("Draw")
-            break
-    print("Game over, the game will close in 5 seconds")
-    time.sleep(5)
+        else:
+            board = make_board()
+            print_board(board)
+            continue
 
 
 main_function()

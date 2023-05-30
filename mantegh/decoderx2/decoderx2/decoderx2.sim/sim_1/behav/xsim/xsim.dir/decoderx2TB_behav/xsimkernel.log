@@ -1,7 +1,0 @@
-Running: xsim.dir/decoderx2TB_behav/xsimk.exe -simmode gui -wdb decoderx2TB_behav.wdb -simrunnum 0 -socket 58595
-Design successfully loaded
-Design Loading Memory Usage: 8036 KB (Peak: 8036 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 8580 KB (Peak: 8580 KB)
-Simulation CPU Usage: 0 ms

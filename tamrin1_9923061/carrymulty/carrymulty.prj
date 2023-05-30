@@ -1,4 +1,0 @@
-vhdl work "FA.vhd"
-vhdl work "sixFA.vhd"
-vhdl work "Ripple_Adder.vhd"
-vhdl work "carrymulty.vhd"

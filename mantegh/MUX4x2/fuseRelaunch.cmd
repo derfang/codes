@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "E:/MUX4x2/MUX4x2TB_isim_beh.exe" -prj "E:/MUX4x2/MUX4x2TB_beh.prj" "work.MUX4x2TB" 

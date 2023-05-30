@@ -1,7 +1,0 @@
-Running: xsim.dir/CAStb_behav/xsimk.exe -simmode gui -wdb CAStb_behav.wdb -simrunnum 0 -socket 51710
-Design successfully loaded
-Design Loading Memory Usage: 8084 KB (Peak: 8084 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 8616 KB (Peak: 8616 KB)
-Simulation CPU Usage: 0 ms

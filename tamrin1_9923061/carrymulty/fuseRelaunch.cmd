@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/erfan/Desktop/hossi/carrymulty/carrymultytb_isim_beh.exe" -prj "C:/Users/erfan/Desktop/hossi/carrymulty/carrymultytb_beh.prj" "work.carrymultytb" 
