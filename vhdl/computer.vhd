@@ -123,7 +123,7 @@ begin
     uut_rom : rom port map(address => rom_add , data => rom_data);
     uut_Extrabit : Extrabit port map(clk => clk , reset => Extrabit_reset , colmpliment => Extrabit_compliment , data_in => Extrabit_in , data_out => Extrabit_out);
     -----------------------------------------------------------------------------------------------------------
-    ---------------this part is the implimentation of coumputer ------------------------------------------------
+    ---------------this part is the implimentation of coumputer -----------------------------------------------
     -----------------------------------------------------------------------------------------------------------
     rom_add <= PC_out;
     IR_in <= rom_data;
