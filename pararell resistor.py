@@ -18,7 +18,6 @@ print(
     "This program calculates the total resistance of a dynamic number of pararelle resistors "
 )
 while True:
-
     try:
         x = input("n for exit; Enter the resistors: ")
         if x.lower() == "n":

@@ -1,3 +1,12 @@
 {
     "C_Cpp.errorSquiggles": "enabled"
-}
+
+
+    // markdownlint
+    ,"markdownlint.config": {
+      "MD033": {
+        "allowed_elements": ["nobr", "sup", "a"]
+      }
+    }
+    // markdownlint
+  }
