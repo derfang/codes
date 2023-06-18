@@ -4,7 +4,7 @@
 # The program stops when the user enters n
 # The program is written in python 3.11.2
 from time import sleep
-
+import random
 
 def pararelle_dynamic_resistors(list_of_resistors):
     """ This function calculates the total resistance of pararelle dynamic resistors
