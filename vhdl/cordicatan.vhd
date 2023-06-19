@@ -8,13 +8,13 @@ use IEEE.numeric_std.all;
 
 entity cordicatan is
     port(
-        yin : in std_logic_vector(16 downto 0); 
-        atan_yin : out std_logic_vector(16 downto 0) 
+        yin : in signed(16 downto 0); 
+        atan_yin : out signed(16 downto 0) 
     );
 end cordicatan;
 
 architecture rtl of cordicatan is 
-    type deg is array (0 to 9) of std_logic_vector(16 downto 0);
+    type deg is array (0 to 9) of signed(16 downto 0);
     constant degs : deg := (
         0 => "00010110100000000" , -- 45     = b'00101101.00000000 
         1 => "00001101010001110", -- 26.555 = b'00011010.10001110 
@@ -26,15 +26,15 @@ architecture rtl of cordicatan is
         7 => "00000000001110010", -- 0.447  = b'00000000.01110010
         others => "00000000000000000"
     );
-    signal xo0,xo1,xo2,xo4,xo3,xo5,xo6,xo8 : signed(16 downto 0) := (others => '0') ; -- these signals are for test
-    signal yo0,yo1,yo2,yo4,yo3,yo5,yo6,yo8 : signed(16 downto 0) := (others => '0') ;
-    signal zo0,zo1,zo2,zo4,zo3,zo5,zo6,zo8 : signed(16 downto 0) := (others => '0') ;
+    -- signal xo0,xo1,xo2,xo3,xo4,xo5,xo6,xo7,xo8 : signed(16 downto 0) := (others => '0') ; -- these signals are for test
+    -- signal yo0,yo1,yo2,yo3,yo4,yo5,yo6,yo7,yo8 : signed(16 downto 0) := (others => '0') ;
+    -- signal zo0,zo1,zo2,zo3,zo4,zo5,zo6,zo7,zo8 : signed(16 downto 0) := (others => '0') ;
 begin
     process(yin)
         variable x0,x1,x2,x3,x4,x5,x6,x7 : signed(16 downto 0) := (others => '0') ;
         variable y0,y1,y2,y3,y4,y5,y6,y7 : signed(16 downto 0) := (others => '0') ;
         variable z0,z1,z2,z3,z4,z5,z6,z7,z8 : signed(16 downto 0) := (others => '0') ;
-        variable x8,y8 : signed(16 downto 0) := (others => '0') ;
+        -- variable x8,y8 : signed(16 downto 0) := (others => '0') ;
     begin
         y0 := signed(yin);
         x0 := "00000000100000000";   -- 1.0=b'000000010000000
@@ -112,19 +112,19 @@ begin
         ---------stage 7---------
         if (y7(16) xor x7(16)) = '1' then
             z8 := z7 - signed(degs(7)); 
-            x8 := x7 - shift_right(y7,7);   --these are not necessary for calculation 
-            y8 := y7 + shift_right(x7,7);   --but they are used to extend the circuit for more bits
+            -- x8 := x7 - shift_right(y7,7);   --these are not necessary for calculation 
+            -- y8 := y7 + shift_right(x7,7);   --but they are used to extend the circuit for more bits
         else                                                    
             z8 := z7 + signed(degs(7));             
-            x8 := x7 + shift_right(y7,7);   --these are not necessary for calculation 
-            y8 := y7 - shift_right(x7,7);   --but they are used to extend the circuit for more bits
+            -- x8 := x7 + shift_right(y7,7);   --these are not necessary for calculation 
+            -- y8 := y7 - shift_right(x7,7);   --but they are used to extend the circuit for more bits
         end if;
 ------------------------------------------------        
-        atan_yin <= std_logic_vector(z8);
+        atan_yin <= z8;
         -- xo <= x8;  --these signals are for test
         -- yo <= y8;  --you can use them to check any stage
-        xo0 <= x0;   xo1 <= x1;   xo2 <= x2;   xo3 <= x3;   xo4 <= x4;   xo5 <= x5;   xo6 <= x6;   xo8 <= x7;
-        yo0 <= y0;   yo1 <= y1;   yo2 <= y2;   yo3 <= y3;   yo4 <= y4;   yo5 <= y5;   yo6 <= y6;   yo8 <= y7;
-        zo0 <= z0;   zo1 <= z1;   zo2 <= z2;   zo3 <= z3;   zo4 <= z4;   zo5 <= z5;   zo6 <= z6;   zo8 <= z7;
+        -- xo0 <= x0;   xo1 <= x1;   xo2 <= x2;   xo3 <= x3;   xo4 <= x4;   xo5 <= x5;   xo6 <= x6;   xo7 <= x7;   
+        -- yo0 <= y0;   yo1 <= y1;   yo2 <= y2;   yo3 <= y3;   yo4 <= y4;   yo5 <= y5;   yo6 <= y6;   yo7 <= y7;
+        -- zo0 <= z0;   zo1 <= z1;   zo2 <= z2;   zo3 <= z3;   zo4 <= z4;   zo5 <= z5;   zo6 <= z6;   zo7 <= z7;   zo8 <=z8;
         end process;    
 end rtl;

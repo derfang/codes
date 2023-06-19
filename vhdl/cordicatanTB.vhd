@@ -10,12 +10,12 @@ end entity;
 
 architecture testbench of cordicatanTB is
     component cordicatan is
-        port(yin : in std_logic_vector(16 downto 0); 
-            atan_yin : out std_logic_vector(16 downto 0) );
+        port(yin : in signed(16 downto 0); 
+            atan_yin : out signed(16 downto 0) );
     end component;
 
-    signal yin : std_logic_vector(16 downto 0) := (others => '0');
-    signal atan_yin : std_logic_vector(16 downto 0) := (others => '0');
+    signal yin : signed(16 downto 0) := (others => '0');
+    signal atan_yin : signed(16 downto 0) := (others => '0');
     
 begin
     uut : cordicatan
