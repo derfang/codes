@@ -1,7 +1,8 @@
---aurhor : DERFANG
+-- vhdl-linter-disable unused
 -- vhdl-linter-disable type-resolved
 -- vhdl-linter-disable not-declared
 
+--?aurhor : DERFANG
 
 -- in this code we wish to make a ALU unit that can do the following operations:
 -- 0.and   1.add   2.circular shift left  3.circular shift right
@@ -56,16 +57,16 @@ signal carry_out: std_logic;
 signal multy_out: std_logic_vector(15 downto 0);
 
 signal sqrt_out: std_logic_vector(15 downto 0);
-signal sqrt_nc_unused: std_logic_vector(14 downto 0);
+signal sqrt_nc: std_logic_vector(14 downto 0);
 signal sqrt_q: std_logic_vector(8 downto 1);
-signal sqrt_ro_unused: std_logic_vector(16 downto 7);
+signal sqrt_ro: std_logic_vector(16 downto 7);
 signal sqrt_ai: std_logic_vector(16 downto 1);
 
 begin
     uut1: Ripple_Adder port map(a,b,'0',adder_out,carry_out);
     uut2: arraymulty port map(a(5 downto 0),b(5 downto 0),multy_out(11 downto 0));
     multy_out(15 downto 12) <= "0000";
-    uut3: sqrt port map(sqrt_ai,sqrt_ro_unused,sqrt_q,sqrt_nc_unused);
+    uut3: sqrt port map(sqrt_ai,sqrt_ro,sqrt_q,sqrt_nc);
 
 
     ----------------sqrt was defined reverse in the previous code so we need to reverse it again--------------------
