@@ -7,6 +7,7 @@
       "MD033": {
         "allowed_elements": ["nobr", "sup", "a"]
       }
-    }
+    },
+    "compile-hero.disable-compile-files-on-did-save-code": false
     // markdownlint
   }

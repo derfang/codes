@@ -14,6 +14,7 @@
 import os
 import random
 import time
+T=0
 
 
 # 1. make a board
@@ -40,6 +41,8 @@ def print_board(board):
 # 3. make a function that takes input from the user and changes the board if the input is valid
 def user_input(board):
     """function that takes input from the user and changes the board if the input is valid"""
+    global T
+    T=T+5
     while True:
         try:
             x, y = input("Enter the coordinates: ").split()
@@ -126,13 +129,15 @@ def main_function():
         play_again = input("do you want to play again? (y/n) : ")
         if play_again == "n":
             print("Thanks for playing!!!")
-            print("The game will close in 5 seconds")
-            time.sleep(5)
-            break
+            for i in range(5):
+                print("The game will close in " + str(5 - i) + " seconds", end="")
+                time.sleep(1)
+                print("\r", end="")
+            exit()
         else:
             board = make_board()
             print_board(board)
             continue
 
-
+#how to only remove the last line text in console? (python) a:
 main_function()
