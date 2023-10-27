@@ -206,7 +206,8 @@ int main() {
   cin >> n;
   state start;
   start.howManyBlocks = n;
-  start.depth = -1; // we start from -1 because we will increment it before checking the goal state
+  start.depth = -1;  // we start from -1 because we will increment it before
+                     // checking the goal state
   block goldenBlock;
   goldenBlock.id = 11;
   int x1, y1, x2, y2;
